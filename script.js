@@ -57,6 +57,6 @@ function eliminarItem(li, precio) {
 
 function updateTotal() {
     const spanTotal = document.getElementById("total");
-    spanTotal.textContent = `$${totalAcumulado.toLocaleString()}`;
+    spanTotal.textContent = '$' + totalAcumulado.toLocaleString('es-CO', { minimumFractionDigits: 2 });
 }
 
